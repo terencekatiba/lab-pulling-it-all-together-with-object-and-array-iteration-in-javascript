@@ -160,3 +160,13 @@ function playerNumbers(teamName) {
         }
     }
 }
+
+function playerStats(playerName) {
+    const game = gameObject();
+
+    for (const team of [game.home, game.away]) {
+        if (team.players[playerName]) {
+            return team.players[playerName];
+        }
+    }
+}
