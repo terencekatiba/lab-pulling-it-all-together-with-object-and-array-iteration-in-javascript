@@ -150,3 +150,13 @@ function teamNames() {
 
     return [game.home.teamName, game.away.teamName];
 }
+
+function playerNumbers(teamName) {
+    const game = gameObject();
+
+    for (const team of [game.home, game.away]) {
+        if (team.teamName === teamName) {
+            return Object.values(team.players).map(player => player.number);
+        }
+    }
+}
