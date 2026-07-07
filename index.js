@@ -115,7 +115,7 @@ function gameObject() {
     };
 }
 
-function numPointScored(playerName) {
+function numPointsScored(playerName) {
     const game = gameObject();
 
     for (const team of [game.home, game.away]) {
@@ -129,7 +129,7 @@ function shoeSize(playerName) {
     const game = gameObject();
 
     for (const team of [game.home, game.away]) {
-        if(team.playeyers[playerName]) {
+        if (team.players[playerName]) {
         return team.players[playerName].shoe;
         }
     }
@@ -171,7 +171,7 @@ function playerStats(playerName) {
     }
 }
 
-function bigShoesRebound(playerName) {
+function bigShoesRebounds(playerName) {
      const game = gameObject();
 
     let biggestShoe = 0;
