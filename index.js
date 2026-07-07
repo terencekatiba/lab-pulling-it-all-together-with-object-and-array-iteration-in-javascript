@@ -170,3 +170,21 @@ function playerStats(playerName) {
         }
     }
 }
+
+function bigShoesRebound(playerName) {
+     const game = gameObject();
+
+    let biggestShoe = 0;
+    let rebounds = 0;
+
+    for (const team of [game.home, game.away]) {
+        for (const player in team.players) {
+            if (team.players[player].shoe > biggestShoe) {
+                biggestShoe = team.players[player].shoe;
+                rebounds = team.players[player].rebounds;
+            }
+        }
+    }
+
+    return rebounds;
+}
