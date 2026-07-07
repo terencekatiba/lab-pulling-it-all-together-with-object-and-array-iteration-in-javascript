@@ -134,3 +134,13 @@ function shoeSize(playerName) {
         }
     }
 }
+
+function teamColors(teamName) {
+    const game = gameObject();
+
+    for (const team of [game.home, game.away]) {
+        if (team.teamName === teamName) {
+            return team.colors;
+        }
+    }
+}
