@@ -171,7 +171,7 @@ function playerStats(playerName) {
     }
 }
 
-function bigShoesRebounds(playerName) {
+function bigShoeRebounds(playerName) {
      const game = gameObject();
 
     let biggestShoe = 0;
