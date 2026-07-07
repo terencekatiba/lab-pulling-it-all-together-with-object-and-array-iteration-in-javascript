@@ -119,8 +119,18 @@ function numPointScored(playerName) {
     const game = gameObject();
 
     for (const team of [game.home, game.away]) {
-        if (team.players[playerName] {
-            return team.players[playerName].shoe;
-        })
+        if (team.players[playerName]) {
+            return team.players[playerName].points;
+        }
+    }
+}
+
+function shoeSize(playerName) {
+    const game = gameObject();
+
+    for (const team of [game.home, game.away]) {
+        if(team.playeyers[playerName]) {
+        return team.players[playerName].shoe;
+        }
     }
 }
